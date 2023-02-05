@@ -7,10 +7,6 @@
 
 import Foundation
 
-let array = [1, 3, 4 , 5, 2 , 9 , 2]
-
-var myDictionary = [Int: Int]()
-
 func binarySearch(_ array: [Int], _ value: Int) -> Int? {
     
     // guard if array empty
@@ -37,3 +33,7 @@ func binarySearch(_ array: [Int], _ value: Int) -> Int? {
     return nil
     
 }
+
+let array = [1, 3, 4 , 5, 2 , 9 , 2]
+
+var myDictionary = [Int: Int]()

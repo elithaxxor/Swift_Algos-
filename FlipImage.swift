@@ -45,7 +45,7 @@ func flip (_ image: inout [[Int]]) -> [[Int]] {
 func invert (_ image: inout [[Int]]) -> [[Int]] {
     for i in 0..<image.count {
         for j in 0..<image.count {
-            if image[i][j] == 1 { image[i][j] = 0  } // start inversion logic 
+            if image[i][j] == 1 { image[i][j] = 0  } // start inversion logic
             else if image[i][j] == 0 { image[i][j] = 1  }
         }
     }

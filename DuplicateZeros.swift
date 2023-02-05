@@ -8,8 +8,6 @@
 
 import Foundation
 
-var dupArr = [1, 3, 4 , 5, 2 , 9 , 2]
-duplicateZeros(arr: dupArr)
 
 func duplicateZeros(_ arr: inout [Int]) {
     var start = 0
@@ -26,6 +24,10 @@ func duplicateZeros(_ arr: inout [Int]) {
     print (arr)
 
 }
+
+var dupArr = [1, 3, 4 , 5, 2 , 9 , 2]
+duplicateZeros(arr: dupArr)
+
 
 /// Input: arr = [1,0,2,3,0,4,5,0]
 /// Expected Output: [1,0,0,2,3,0,0,4]

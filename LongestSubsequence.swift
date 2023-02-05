@@ -8,26 +8,26 @@
  */
 
 import Foundation
-class Solution {
-    func findLUSlength(_ a: String, _ b: String) -> Int {
-        var aEnd = a.count; var aStart = 0
-        var bEnd = b.count; var bStart = 0
-        var count = 0
-        let aa = Array(a)
-        let ab = Array(b)
-        while (aStart < aEnd) {
-            count += aStart
-            while (bStart < bEnd){
-                if (aa[aStart] == ab[bStart]) {
-                    bStart += 1
-                    aStart += 1
-                }
-                aStart = count
-                 bStart += 1
-            }
+
+func findLUSlength(_ a: String, _ b: String) -> Int {
+    var aEnd = a.count; var aStart = 0
+    var bEnd = b.count; var bStart = 0
+    var count = 0
+    let aa = Array(a)
+    let ab = Array(b)
+    while (aStart < aEnd) {
+        count += aStart
+        while (bStart < bEnd){
+            if (aa[aStart] == ab[bStart]) {
                 bStart += 1
                 aStart += 1
+            }
+            aStart = count
+            bStart += 1
         }
-            return count
-        }
+        bStart += 1
+        aStart += 1
     }
+    return count
+}
+
